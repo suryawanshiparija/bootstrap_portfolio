@@ -1,0 +1,65 @@
+/* Brand colors */
+:root {
+  --primary-color: #5b95ec;
+  --hover-color: #ffffff;
+}
+
+/* Hero section background with solid blue (or gradient/image if you want) */
+.hero-section {
+  height: 40vh;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Navbar link base + hover */
+.nav-hover {
+  color: var(#ffffff) !important;
+  transition: all 0.3s ease;
+}
+
+.nav-hover:hover {
+  color: var(--hover-color) !important;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation effect */
+.animate {
+  animation: fadeInUp 1s ease both;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h2, h5 {
+  font-weight: 700;
+}
+.about-photo {
+  max-width: 100px;
+  height: auto;
+}
+
